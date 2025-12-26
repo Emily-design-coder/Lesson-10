@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(232, 195, 231);
+    color: rgb(205, 90, 178)
+}
+
+h1 {
+    color: rgb(0, 0, 0)
+}
+
+/*attribute selector*/
+a {
+    color: rgb(85, 91, 214);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(212, 139, 139)
+}
+
+/*child selector*/
+ul>li {
+    font-weight: bold;
+}
+
+/*sibling selector*/
+h1+p {
+    background-color: cadetblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*hover pseudo-class*/
+ul li:hover {
+    color: rgb(137, 137, 196);
+}
+
+/* :nth-child(n) Pseudo-class*/
+ul li:nth-child(3) {
+    background-color: ivory;
+}
+
+/* not(selector) Pseudo-class*/
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+/* before Pseudo-element*/
+ul li::before {
+    content: "📖"
+}
+
+/* ::first-letter Pseudo-element*/
+p::first-letter {
+    font-size: 200%;
+    color: rgb(239, 121, 184)
+}
